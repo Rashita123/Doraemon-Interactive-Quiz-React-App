@@ -50,7 +50,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Welcome to the Doraemon Quiz</h1>
+      <div class="header">Welcome to the Doraemon Quiz</div>
       {questions.map((dict, index) => {
         return (
           <div>
@@ -58,12 +58,19 @@ export default function App() {
             <button onClick={() => responseSelect(0)}>{dict.options[0]}</button>
             <button onClick={() => responseSelect(1)}>{dict.options[1]}</button>
             <button onClick={() => responseSelect(3)}>{dict.options[2]}</button>
-            <button onClick={() => checkResponse(dict.ans)}>Submit</button>
+            <button
+              class="submit-button"
+              onClick={() => checkResponse(dict.ans)}
+            >
+              Submit
+            </button>
 
             <h3>Current Score: {score}</h3>
+            <hr></hr>
           </div>
         );
       })}
+      <h1>Final Score: {score}</h1>
     </div>
   );
 }

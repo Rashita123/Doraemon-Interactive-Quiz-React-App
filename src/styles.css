@@ -5,10 +5,36 @@
 body {
   max-width: 80%;
   margin: auto;
-  float: left;
+  float: center;
+  background-color: rgba(31, 41, 55);
+  color: white;
+}
+.header {
+  font-size: xx-large;
+  background-color: rgb(40, 168, 234);
+  height: 3rem;
+  width: 100%;
+  padding: 3rem 1.5rem;
+  margin: 1rem;
 }
 button {
   display: block;
-  margin: 0.5rem;
   padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 30px;
+  color: rgb(40, 168, 234);
+  margin: 0.5rem auto;
+  width: 20%;
+}
+button:hover {
+  color: white;
+}
+
+.submit-button {
+  font-weight: bold;
+  background-color: rgb(40, 168, 234);
+  color: white;
+}
+.submit-button:hover {
+  box-shadow: 3px 3px 6px #aaaaaa;
 }
