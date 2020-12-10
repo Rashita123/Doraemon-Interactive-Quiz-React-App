@@ -16,6 +16,7 @@ body {
   width: 100%;
   padding: 3rem 1.5rem;
   margin: 1rem;
+  border-radius: 8px;
 }
 button {
   display: block;
