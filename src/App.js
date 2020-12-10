@@ -36,7 +36,7 @@ var questions = [
 export default function App() {
   const [options, setOptions] = useState([]);
   const [score, setScore] = useState(0);
-  const [correct, setCorrect] = useState("");
+
   function responseSelect(optionNo) {
     setOptions(optionNo);
   }
@@ -44,9 +44,7 @@ export default function App() {
   function checkResponse(correctResponse) {
     if (correctResponse === options) {
       setScore(score + 1);
-      setCorrect("Correct");
     } else {
-      setCorrect("Oops! Wrong");
     }
   }
 
@@ -61,7 +59,6 @@ export default function App() {
             <button onClick={() => responseSelect(1)}>{dict.options[1]}</button>
             <button onClick={() => responseSelect(3)}>{dict.options[2]}</button>
             <button onClick={() => checkResponse(dict.ans)}>Submit</button>
-            <h3>{correct}</h3>
 
             <h3>Current Score: {score}</h3>
           </div>
