@@ -1,0 +1,14 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  max-width: 80%;
+  margin: auto;
+  float: left;
+}
+button {
+  display: block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
