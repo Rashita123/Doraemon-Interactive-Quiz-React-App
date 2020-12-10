@@ -44,7 +44,6 @@ export default function App() {
   function checkResponse(correctResponse) {
     if (correctResponse === options) {
       setScore(score + 1);
-    } else {
     }
   }
 
