@@ -23,19 +23,20 @@ button {
   padding: 0.5rem;
   background-color: transparent;
   border-radius: 30px;
-  color: rgb(40, 168, 234);
+  color: white;
+  border-color: rgb(40, 168, 234);
   margin: 0.5rem auto;
   width: 20%;
 }
 button:hover {
   color: white;
+  background-color: rgb(40, 168, 234);
 }
 
 .submit-button {
-  font-weight: bold;
   background-color: rgb(40, 168, 234);
   color: white;
 }
 .submit-button:hover {
-  box-shadow: 3px 3px 6px #aaaaaa;
+  box-shadow: 3px 3px 2px #aaaaaa;
 }
